@@ -1,7 +1,14 @@
 import React from "react";
 
-export const Button = () => {
-  return <div>Button</div>;
+export const Button = ({ styles }) => {
+  return (
+    <button
+      type="button"
+      className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-orimary outline-none ${styles}`}
+    >
+      Get Started
+    </button>
+  );
 };
 
 export default Button;
